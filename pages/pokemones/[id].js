@@ -1,7 +1,13 @@
+import Image from "next/image"
+import Link from "next/link"
 const Pokemon = ({data}) =>{
     console.log(data)
     return(
-        <p>lala</p>
+        <div>
+            <h1>{data.name} #{data.id}</h1>
+            <Image src={data.sprites.front_default} width={400} height={400}/>
+            <Link href="/">Volver a la pokedek</Link>
+        </div>
     )
 }
 

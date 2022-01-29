@@ -11,7 +11,7 @@ const Pokemon = ({pokemon}) =>{
 export default function Pokemons({pokemones}) {
   return (
     <div>
-      <p>Pokemons</p>
+      <p data-testid="titulo">Pokemons</p>
       <ul>
 
         {pokemones.map(pokemon => <Pokemon pokemon={pokemon} key ={pokemon.name} />)}
